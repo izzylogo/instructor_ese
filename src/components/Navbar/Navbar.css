@@ -48,13 +48,58 @@ a {
     color: white;
 }
 
-.menu ul li:nth-child(3){
+.menu ul li{
+    transition: 0.5s ease;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu ul li:nth-child(5){
     display: flex;
     align-items: center;
 }
 
+
+.menu ul li:hover{
+    color: rgba(230, 157, 21, 0.855);
+}
+
 .icon{
     display: none;
+}
+
+.li_icon{
+    color: white;
+}
+
+.droping1, .droping2{
+    background-color: white;
+    position: absolute;
+    color: #535353;
+    top: 80%;
+    padding: 20px;
+    display: none;
+    transition: .9s cubic-bezier(0.075, 0.82, 0.165, 1);
+    /* font-weight: 300 !important; */
+}
+
+.droping1 p, .droping2 p {
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+
+.droping2{
+    left: 55%;
+}
+
+.roster:hover .droping1{
+    display: block;
+}
+
+.catalog:hover .droping2 {
+    display: block;
 }
 
 .mobile{

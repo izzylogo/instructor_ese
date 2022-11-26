@@ -51,15 +51,15 @@ const Tabs = () => {
             money5={"$1,115"}
         />
         <Tab
-        head={"TOP ARTISTS"}
-            tit1={"Artists"}
+        head={"TOP DSPS"}
+            tit1={"DSPS"}
             tit2={"Royalty"}
-            name1={"Star Girl"}
-            money1={"$17,359.26"}
-            name2={"Ije Cave"}
-            money2={"$9,368.48"}
-            name3={"Tunestar"}
-            money3={"$2,193.50"}
+            name1={"VEVO"}
+            money1={"$9,359.26"}
+            name2={"Spotify"}
+            money2={"$7,400.48"}
+            name3={"Apple Music"}
+            money3={"$3,916.64"}
             name4={"Steveland"}
             money4={"$701.81"}
             name5={"Ije Cave, Flavour"}

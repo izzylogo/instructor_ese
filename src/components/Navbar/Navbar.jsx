@@ -31,10 +31,24 @@ export const Navbar = () => {
                 {/*  */}
                 <div className="menu">
                     <ul>
-                        <li>Dashboard</li>
+                        <li>Dashboard </li>
+                        <li className='roster'>Roster   
+                            <IoIosArrowDown/>
+                            <div className="droping1">
+                                <p>Create User</p>
+                                <p>Create Artist</p>
+                            </div>
+                        </li>
+                        <li className='catalog'>Catalog  
+                            <IoIosArrowDown/>
+                            <div className="droping2">
+                                <p>Create Track</p>
+                                <p>Create Release</p>
+                            </div>
+                        </li>
                         <li>Royalty</li>
                         <li>
-                            <IoIosExit color='white'/>
+                            <IoIosExit className='li_icon' size={30}/>
                         </li>
                     </ul>
                 </div>
