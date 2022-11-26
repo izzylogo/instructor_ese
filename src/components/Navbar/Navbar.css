@@ -78,7 +78,7 @@ a {
     background-color: white;
     position: absolute;
     color: #535353;
-    top: 80%;
+    top: 60%;
     padding: 20px;
     display: none;
     transition: .9s cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -99,6 +99,10 @@ a {
 }
 
 .catalog:hover .droping2 {
+    display: block;
+}
+
+.droping1:hover{
     display: block;
 }
 
