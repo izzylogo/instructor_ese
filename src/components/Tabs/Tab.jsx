@@ -1,39 +1,35 @@
 import React from 'react'
 import './Tab.css'
 
-const Tab = () => {
+const Tab = (props) => {
   return (
     <div className='tab'>
         <div className="tab-contain">
-            <p>TOP ARTISTS</p>
+            <p>{props.head}</p>
             <table>
                 <tr>
-                    <th>Company</th>
-                    <th>Contact</th>
+                    <th>{props.tit1}</th>
+                    <th>{props.tit2}</th>
                 </tr>
                 <tr>
-                    <td>Alfreds Futterkiste</td>
-                    <td>Maria Anders</td>
+                    <td>{props.name1}</td>
+                    <td>{props.money1}</td>
                 </tr>
                 <tr>
-                    <td>Centro comercial Moctezuma</td>
-                    <td>Francisco Chang</td>
+                    <td>{props.name2}</td>
+                    <td>{props.money2}</td>
                 </tr>
                 <tr>
-                    <td>Ernst Handel</td>
-                    <td>Roland Mendel</td>
+                    <td>{props.name3}</td>
+                    <td>{props.money3}</td>
                 </tr>
                 <tr>
-                    <td>Island Trading</td>
-                    <td>Helen Bennett</td>
+                    <td>{props.name4}</td>
+                    <td>{props.money4}</td>
                 </tr>
                 <tr>
-                    <td>Laughing Bacchus Winecellars</td>
-                    <td>Yoshi Tannamuri</td>
-                </tr>
-                <tr>
-                    <td>Magazzini Alimentari Riuniti</td>
-                    <td>Giovanni Rovelli</td>
+                    <td>{props.name5}</td>
+                    <td>{props.money5}</td>
                 </tr>
             </table>
         </div>

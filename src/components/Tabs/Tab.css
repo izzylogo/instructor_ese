@@ -11,6 +11,10 @@ table {
     text-align: left;
     padding: 8px;
   }
+
+  th{
+    background-color: #e4e9f42f;
+  }
   
   tr:nth-child(even) {
     background-color: #dddddd;
