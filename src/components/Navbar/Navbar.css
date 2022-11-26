@@ -1,0 +1,173 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.6rem;
+}
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(22, 21, 21);
+}
+
+.nav-con{
+    position: relative;
+}
+
+.nav-contain {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #006666;
+    padding: 20px;
+}
+.logo {
+    width: 70%;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.menu ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 30px;
+    color: white;
+}
+
+.menu ul li:nth-child(3){
+    display: flex;
+    align-items: center;
+}
+
+.icon{
+    display: none;
+}
+
+.mobile{
+    /* background-color: white;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    padding: 20px 40px;
+    height: 100vh;
+    width: 40%;
+    display: none; */
+}
+
+.men{
+    display: absolute;
+    right: 10%;
+}
+
+.mobile_menu ul{
+    padding-left: 0px;
+    color:  #535353;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.mobile_menu ul li{
+    font-size: 25px;
+}
+
+.slide{
+    background-color: white;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    padding: 20px 40px;
+    height: 100vh;
+    width: 40%;
+    /* display: none; */
+}
+
+
+
+@media screen and (max-width: 1020px) {
+    .menu ul{
+        display: none;
+    }
+
+    .mobile{
+        display: block;
+    }
+
+    .hide{
+        background-color: white;
+        position: fixed;
+        top: 0%;
+        right: -60%;
+        padding: 20px 40px;
+        height: 100vh;
+        width: 60%;
+        animation: untoggle 1.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+
+    .active{
+        background-color: white;
+        position: fixed;
+        top: 0%;
+        right: 0%;
+        padding: 20px 40px;
+        height: 100vh;
+        width: 60%;
+        animation: toggle 1.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+        /* display: none; */
+    }
+
+    .icon{
+        display: block;
+    }
+}
+
+@keyframes toggle {
+    
+    from{
+        right: -60%;
+    }
+    to{
+        right: 0%;
+    }
+}
+
+@keyframes untoggle {
+    from{
+        right: 0%;
+    }
+    to{
+        right: -60%;
+    }
+}
+
+/* Nav Active Class */
+.nav__active {
+    transform: translateX(0);
+}
+
+/* Toggler Icon Animation */
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-6px, 6px);
+}
+.toggle .line2 {
+    opacity: 0;
+    transition: 0.3s ease-in-out 0.4s;
+}
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -5px);
+}

@@ -1,0 +1,27 @@
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+  .tab-contain{
+    padding: 20px;
+  }
+
+  .tab{
+    background-color: white;
+    border: 1px solid rgba(93, 92, 92, 0.551);
+    border-radius: 3px;
+  }

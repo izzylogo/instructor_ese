@@ -1,0 +1,11 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: #535353;
+    background-color: #f8f9fa;
+}
