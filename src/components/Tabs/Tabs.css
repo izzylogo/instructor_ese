@@ -1,5 +1,5 @@
 .tabs{
-    padding: 0px 50px;
+    padding: 0px 20px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 50px;
